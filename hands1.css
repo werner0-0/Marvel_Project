@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  body {
+    margin: 0;
+    height: 100vh;
+    background-image: url("images/marvelBg.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .marvel-container {
+    width: 1000px;
+    max-width: 80%;
+    height: 70vh;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+  }
+  #TitleName {
+    background-color: hsl(0, 90%, 50%);
+    color: white;
+    text-align: center;
+    padding: 0.5rem 0rem;
+  }
+  .marvel-characters {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: hsla(0, 0%, 0%, 0.5);
+  }
+  .super-heros,
+  .super-villains {
+    width: 400px;
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  #popularHeros,
+  #popularVillains {
+    color: white;
+    padding: 2rem 0rem;
+    text-align: center;
+  }
+  .grid-container {
+    padding: 0rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 20px;
+  }
+  .grid-container img {
+    width: 100%;
+    height: 120px;
+    overflow: hidden;
+  }
+  .superhero,
+  .supervillain {
+    display: flex;
+    flex-direction: column;
+  }
+  .superhero p,
+  .supervillain p {
+    text-align: center;
+    background-color: white;
+    padding: 0.1rem 0rem;
+    font-size: 0.7em;
+    font-weight: bold;
+  }
